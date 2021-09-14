@@ -33,11 +33,6 @@ export class CarritoComponent implements OnInit {
     this.total = tot + 100;
     this.pasarData.emit(this.total);
   }
-  
-  sumarItems(){
-    var cantItems = this.Items.length;
-    (document.getElementById("cantItems") as HTMLElement).innerHTML = "Mi carrito (" + cantItems + " items)"
-  }
 
   eliminarItem(item: DetalleCarrito){
     var pos = this.Items.indexOf(item);
